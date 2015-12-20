@@ -28,7 +28,7 @@ public class HttpUtil {
                     while ((line = reader.readLine()) != null) {
                         response.append(line);
                     }
-                    LogUtil.w("sendHttpRequest", response.toString());
+                    //LogUtil.w("sendHttpRequest", response.toString());
                     if (listener != null) {
                         // callback
                         listener.onFinish(response.toString());
